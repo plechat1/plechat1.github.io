@@ -28,7 +28,7 @@ twitter_username: pigeance
 github_username:  plechat1
 
 # Build settings
-theme: jekyll-theme-chirpy
+theme:
 plugins:
   - jekyll-feed
 
