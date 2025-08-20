@@ -21,7 +21,7 @@
 title: HOME
 email: patchania@googlemail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Finding my way...
+  Your premier destination for unforgettable party events and celebrations!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://plechat1.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pigeance
@@ -31,6 +31,22 @@ github_username:  plechat1
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Sass configuration to suppress deprecation warnings
+sass:
+  quiet_deps: true
+  style: compressed
+  sass_dir: _sass
+  sourcemap: never
+
+# Event-specific settings
+event_settings:
+  site_name: "Patchania Events"
+  tagline: "Unforgettable celebrations await!"
+  primary_color: "#667eea"
+  secondary_color: "#764ba2"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -40,14 +56,14 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
